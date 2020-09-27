@@ -15,7 +15,7 @@ outcome_df = data.isin(condition)
 ```
 The above code get the same outcome with below one, but below one is faster.
 ```python
-import pandas
+import pandas as pd
 import numpy as np
 from multiple_processes import parallel_isin
 
