@@ -13,7 +13,7 @@ condition = list(np.arange(1e3))
 # isin
 outcome_df = data.isin(condition)
 ```
-The above code get the same outcome with below one, but below one is faster.
+The above code gets the same outcome with below one, but below one is faster when the size of data is large.
 ```python
 import pandas as pd
 import numpy as np
