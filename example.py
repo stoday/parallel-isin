@@ -23,10 +23,10 @@ print('Elapsed time of DataFrame.isin: {}'.format(time.time() - start_time))
 # 使用 parallel_isin 並觀察花費時間
 start_time = time.time()
 outcome_pl = parallel_isin(
-    data,
-    condition,
-    slice_num=1000, 
-    num_processes=6)
+    data,    # 原始資料
+    condition,    # isin 的內容
+    slice_num=1000,    # 要將原始資料切成幾份下去平行跑
+    num_processes=6)    # 要使用幾個核心來跑
 print('Elapsed time of parallel_isin: {}'.format(time.time() - start_time))
 
 ## 尋找較佳的切割大小與程序數量
