@@ -2,7 +2,7 @@
 import pandas as pd
 import numpy as np
 import time
-from multiple_precesses import (
+from multiple_processes import (
     find_num_slice_processes,
     parallel_isin)
 
